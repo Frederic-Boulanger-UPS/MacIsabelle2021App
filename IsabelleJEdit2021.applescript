@@ -14,3 +14,7 @@ on open (doc)
 		end try
 	end try
 end open
+
+on run
+	do shell script "open -a Isabelle2021"
+end run
