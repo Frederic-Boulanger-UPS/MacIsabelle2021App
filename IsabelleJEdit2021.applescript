@@ -8,8 +8,8 @@ on open (doc)
 		try
 			do shell script "/Applications/Isabelle2021.app/bin/isabelle jedit_client " & the quoted form of POSIX path of doc
 		on error errMsg number errNum
-			-- If Isabelle is still not ready, wait 2s again a last time
-			delay 2
+			-- If Isabelle is still not ready, wait 5s again a last time
+			delay 5
 			do shell script "/Applications/Isabelle2021.app/bin/isabelle jedit_client " & the quoted form of POSIX path of doc
 		end try
 	end try
